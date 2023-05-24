@@ -1,10 +1,15 @@
 import './App.css'
-import { useId, useState } from 'react';
+import { useEffect, useId, useState } from 'react';
 import MarkdownPreview from './components/MarkdownPreview';
+import presetMarkdown from './data/presetMarkdown';
 
 function App() {
   // const id = useId();
   const [input, setInput] = useState('');
+
+  useEffect(() => {
+    setInput(presetMarkdown)
+  }, [])
 
   return (
     <>
