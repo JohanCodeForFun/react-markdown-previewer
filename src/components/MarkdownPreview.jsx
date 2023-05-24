@@ -11,7 +11,7 @@ marked.use({
 const MarkdownPreview = ({ markdown }) => {
   const render = marked.parse(markdown)
 
-  return <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(render) }}></div>
+  return <div id="preview" dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(render) }}></div>
 }
 
 export default MarkdownPreview;
