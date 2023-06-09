@@ -12,9 +12,7 @@
 // -- an image, and 
 // -- bolded text
 
-const presetMarkdown = `
-
-# Header (h1)
+const presetMarkdown = `# Header (h1)
 ## Subheading (h2)
 
 Link to [github portfolio](https://github.com/JohanCodeForFun).
@@ -31,8 +29,9 @@ function printHello() {
 
 **Example of bold text.**
 
-- And of course there are lists.
-  - Some are bulleted.
+- Example
+- of
+- lists.
 
 ![Webshop Project](https://jhellberg.com/images/api-store-thumb.png)
 `
