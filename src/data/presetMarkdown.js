@@ -12,32 +12,28 @@
 // -- an image, and 
 // -- bolded text
 
-const presetMarkdown = `# Hej på dig
-## test
-### ....
+const presetMarkdown = `
 
-// comment ...
-// Hur lägger jag till back-ticks?
+# Header (h1)
+## Subheading (h2)
 
-function count(num1, num2) {
-  return num1 * num2
+Link to [github portfolio](https://github.com/JohanCodeForFun).
+
+\`let meaningOfLife = 42\`
+
+\`\`\`
+function printHello() {
+  return "Hello"
 }
+\`\`\`
 
-bold **text** here!
-Italic _text_.
-Both **_text_**.
+> Memento Mori
 
+**Example of bold text.**
 
 - And of course there are lists.
   - Some are bulleted.
-     - With different indentation levels.
-        - That look like this.
 
-
-1. And there are numbered lists too.
-1. Use just 1s if you want!
-1. And last but not least, let's not forget embedded images:
-
-![freeCodeCamp Logo](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)
+![Webshop Project](https://jhellberg.com/images/api-store-thumb.png)
 `
 export default presetMarkdown;
