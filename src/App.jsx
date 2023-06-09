@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { useEffect, useState } from 'react';
 import MarkdownPreview from './components/MarkdownPreview';
 import presetMarkdown from './data/presetMarkdown';
+import Footer from "./components/Footer";
 
 function App() {
   const [input, setInput] = useState('');
@@ -21,6 +22,7 @@ function App() {
         <MarkdownPreview  markdown={input}/>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }
